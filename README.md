@@ -1,3 +1,5 @@
+本框架使用官方PEFT库，完成对于qwen1.5-qwen2.5的LoRA微调。针对于明确知道漏洞类型的内存泄露，会有更好的效果，即LLM的微调适合来产生“专才”
+
 安装环境：
 1.conda create -n llm python=3.10
 
