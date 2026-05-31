@@ -77,6 +77,7 @@ llm-lora-finetune/
 ---
 
 ## ⚙️ Environment Setup
+<pre>
 bash
 1. Create conda environment
 conda create -n llm python=3.10
@@ -86,33 +87,40 @@ conda install pytorch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 pytorch-cuda=
 -c pytorch -c nvidia
 3. Install Python dependencies
 pip install -r requirements.txt
+</pre>
 ---
 
 ## 🚀 Quick Start
 
 ### 1️⃣ Prepare Training Data
+<pre>
 bash
 python create_data.py # Vulnerability detection training data
 python create_data_root.py # Root cause localization data
+</pre>
 ### 2️⃣ Train Models
+<pre>
 bash
 python train_linjiu.py # Train vulnerability detection model
 python train_linjiu_root.py # Train root cause localization model
+</pre>
 ### 3️⃣ Run Inference
+<pre>
 bash
 python predict_linjiu.py # Test vulnerability detection
 python predict_linjiu_root.py # Test root cause localization
-
+</pre>
 ---
 
 ## ⏱️ Frontend Timing Notes
 
 To accurately reflect end-to-end latency in the UI, the frontend should compute:
+<pre>
 Total Time =
 Frontend Framework Latency
 create_data_test.py Execution Time
 predict_linjiu.py Execution Time
-
+</pre>
 This ensures realistic performance reporting for vulnerability detection workflows.
 
 ---
