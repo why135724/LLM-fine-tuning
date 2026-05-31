@@ -62,7 +62,7 @@ For broad reasoning and code synthesis, base model pretraining remains superior.
 ---
 
 ## 🏗️ Project Structure
-
+<pre>
 llm-lora-finetune/
 ├── create_data.py # Build vulnerability detection training set
 ├── create_data_root.py # Build root cause localization train/test sets
@@ -73,7 +73,7 @@ llm-lora-finetune/
 ├── predict_linjiu_root.py # Inference for root cause localization
 ├── requirements.txt
 └── README.md
-
+</pre>
 ---
 
 ## ⚙️ Environment Setup
