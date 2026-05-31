@@ -73,6 +73,7 @@ llm-lora-finetune/
 ├── predict_linjiu_root.py # Inference for root cause localization
 ├── requirements.txt
 └── README.md
+
 ---
 
 ## ⚙️ Environment Setup
@@ -101,6 +102,7 @@ python train_linjiu_root.py # Train root cause localization model
 bash
 python predict_linjiu.py # Test vulnerability detection
 python predict_linjiu_root.py # Test root cause localization
+
 ---
 
 ## ⏱️ Frontend Timing Notes
